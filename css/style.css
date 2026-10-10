@@ -1,0 +1,118 @@
+:root {
+  --blue: #0a5cff;      
+  --navy: #0b1f4d;
+  --teal: #5cc6c0;
+  --gray-bg: #dcdcdc;
+  --text: #1a1a1a;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: var(--text);
+}
+
+img { max-width: 100%; display: block; }
+
+.container {
+  width: min(1100px, 92%);
+  margin-inline: auto;
+}
+
+.top-bar {
+  background: var(--blue);
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  padding: 6px;
+}
+
+.header__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px 0;
+}
+
+.search { flex: 1; max-width: 420px; }
+.search input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.nav {
+     display: flex; gap: 24px; font-size: 13px; padding-bottom: 12px; 
+}
+
+.carousel { 
+    position: relative; 
+}
+
+.carousel__track {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel__track::-webkit-scrollbar { display: none; }
+
+.card {
+  flex: 0 0 calc((100% - 64px) / 5);  
+  scroll-snap-align: start;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 12px;
+  position: relative;
+}
+
+.card__badge {
+  position: absolute; top: 8px; left: 8px;
+  background: var(--navy); color: #fff;
+  font-size: 10px; padding: 2px 6px; border-radius: 4px;
+}
+
+.card__discount {
+  background: var(--teal); color: #fff;
+  font-size: 11px; padding: 2px 6px; border-radius: 4px;
+}
+
+.card__old { text-decoration: line-through; color: #888; font-size: 12px; }
+.card__price { font-size: 18px; font-weight: 700; }
+
+.btn {
+  width: 100%;
+  background: var(--blue);
+  color: #fff;
+  border: 0;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.sales{
+    background-color: #d9d9d9;
+}
+.feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  padding: 48px 0;
+}
+
+@media (max-width: 900px) {
+  .card { flex-basis: calc((100% - 32px) / 3); }  
+  .feature { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .card { flex-basis: 70%; }                      
+  .nav { overflow-x: auto; white-space: nowrap; }
+  .footer__grid { grid-template-columns: 1fr 1fr; }
+}
