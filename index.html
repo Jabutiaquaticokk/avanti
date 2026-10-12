@@ -1,78 +1,181 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avanti</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avanti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <div class="top-bar">
-        Ganhe R$10,00 de desconto no seu primeiro pedido. Utilize o cupom <strong>DESCONTO10</strong>
+  <div class="top-bar">Ganhe R$10,00 de desconto no seu primeiro pedido. Utilize o cupom <strong>DESCONTO10</strong>
+  </div>
+
+  <header>
+    <div class="container header__main">
+      <a href="#" class="logo">AVANTI</a>
+      <form class="search" role="search">
+        <input type="search" placeholder="Digite aqui o que você procura" aria-label="Buscar">
+      </form>
+      <div class="header__actions">
+        <a href="#">Olá,<br>Nome cliente!</a>
+        <a href="#" class="cart" aria-label="Carrinho">🛒<span class="cart__count" id="cart-count">0</span></a>
+      </div>
     </div>
+    <nav class="container nav">
+      <a href="#">☰ Todas as Categorias</a>
+      <a href="#">Departamento</a><a href="#">Departamento</a><a href="#">Departamento</a>
+      <a href="#">Departamento</a><a href="#">Departamento</a><a href="#">Departamento</a><a href="#">Departamento</a>
+    </nav>
+  </header>
 
-    <header class="header">
-        <div class="container header__main">
-            <a href="#"><img src="img/logo-avanti.png" alt="Avanti" class="logo"></a>
-            <form class="search">
-                <input type="search" placeholder="Digite aqui o que você procura">
-            </form>
-            <div class="header__actions">
-                <a href="#">Olá, <br>Nome cliente!</a>
-                <a href="#" class="cart">🛒 <span class="cart__count" id="cart-count">0</span></a>
-            </div>
+  <main>
+    <section class="hero">
+      <img src="img/cadeira.jpg" alt="Roupas dobradas sobre uma cadeira" width="340px" height="340px">
+      <div class="hero__text">
+        <h1><b>SUPER</b>SALE</h1>
+        <p>ITENS SELECIONADOS COM ATÉ</p>
+        <strong>50%OFF</strong>
+      </div>
+    </section>
+
+    <section class="container products">
+      <div class="products__head">
+        <h2>Lançamentos</h2><a href="#">Ver mais</a>
+      </div>
+      <div class="carousel">
+        <button class="arrow arrow--prev" aria-label="Anterior">‹</button>
+        <div class="track"></div>
+        <button class="arrow arrow--next" aria-label="Próximo">›</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="container feature">
+      <div class="feature__img"><img src="img/caneca.png" alt="Caneca Avanti"></div>
+      <div>
+        <h2>LOREM IPSUM</h2>
+        <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend
+          viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel
+          pulvinar ligula hendrerit a.</p>
+        <p>Maecenas fringilla porttitor tortor eget lobortis. Donec sollicitudin euismod orci, auctor fringilla magna
+          consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</p>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container benefits__box">
+        <div class="benefits__list">
+          <h2>LOREM IPSUM</h2>
+          <div class="item"><i class="icon"></i>
+            <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+              quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+          </div>
+          <div class="item"><i class="icon"></i>
+            <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+              quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+          </div>
+          <div class="item"><i class="icon"></i>
+            <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+              quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+          </div>
         </div>
-        <nav class="container nav">
-            <a href="#">Todas as Categorias</a>
-            <a href="#">Departamento</a>
-            <a href="#">Departamento</a>
-          
-        </nav>
-    </header>
+        <img src="img/caneca.png" alt="Caneca Avanti sobre uma tábua na cozinha">
+      </div>
+    </section>
 
-    <main>
-        <section class="hero">
-            <div class="sales" >
-                <img src="img/cadeira.jpg" alt="cadeira" width="255px" height="342px">
-                
-            </div>
-        </section>
+    <section class="container feature">
+      <div class="feature__img"><img src="img/caneca.png" alt="Caneca Avanti"></div>
+      <div>
+        <h2>LOREM IPSUM</h2>
+        <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend
+          viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel
+          pulvinar ligula hendrerit a.</p>
+        <p>Maecenas fringilla porttitor tortor eget lobortis. Donec sollicitudin euismod orci, auctor fringilla magna
+          consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</p>
+      </div>
+    </section>
 
-        <section class="container products">
-            <div class="products__head">
-                <h2>Lançamentos</h2>
-                <a href="#">Ver mais</a>
-            </div>
-            <div class="carousel">
-                <button class="carousel__btn carousel__btn--prev">‹</button>
-                <div class="carousel__track" id="track"></div> <!-- cards entram via JS -->
-                <button class="carousel__btn carousel__btn--next">›</button>
-            </div>
-        </section>
+    <section class="container products">
+      <div class="products__head">
+        <h2>Lançamentos</h2><a href="#">Ver mais</a>
+      </div>
+      <div class="carousel">
+        <button class="arrow arrow--prev" aria-label="Anterior">‹</button>
+        <div class="track"></div>
+        <button class="arrow arrow--next" aria-label="Próximo">›</button>
+        <div class="dots"></div>
+      </div>
+    </section>
 
-        <section class="container feature">
-            <img src="img/caneca.png" alt="Caneca Avanti">
-            <div>
-                <h2>LOREM IPSUM</h2>
-                <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.
-                    <br>
-                    <br>
-                    Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.           
-                </p>
-            </div>
-        </section>
+    <section class="contact" style="--bg: url('img/escritorio.jpg')">
+      <p>Entre em contato conosco e verifique a disponibilidade para sua região!</p>
+    </section>
 
-        
-    </main>
+    <section class="container news">
+      <h2>Cadastre-se na nossa <span>newsletter</span></h2>
+      <form id="news-form" novalidate>
+        <input type="text" name="nome" placeholder="Digite seu nome" aria-label="Nome" required>
+        <input type="email" name="email" placeholder="Digite seu e-mail" aria-label="E-mail" required>
+        <label><input type="checkbox" name="aceite"> Estou de acordo com a Política de Privacidade</label>
+        <button class="btn" type="submit">Cadastrar</button>
+      </form>
+      <p class="msg" id="news-msg" role="status"></p>
+    </section>
+  </main>
 
-    <footer class="footer">...</footer>
+  <footer>
+    <div class="container footer__grid">
+      <div>
+        <a href="#" class="logo">AVANTI</a>
+        <p class="social-title">SIGA NOSSAS REDES SOCIAIS</p>
+        <div class="social"><a href="#">IG</a><a href="#">FB</a><a href="#">YT</a><a href="#">TT</a></div>
+      </div>
+      <div>
+        <h4>Institucional</h4>
+        <ul>
+          <li>Sobre Nós</li>
+          <li>Nossas Lojas</li>
+          <li>Privacidade e Segurança</li>
+          <li>Termos e Condições</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Central de ajuda</h4>
+        <ul>
+          <li>Fale Conosco</li>
+          <li>Frete e Entrega</li>
+          <li>Trocas e Devoluções</li>
+          <li>Formas de Pagamento</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Atendimento</h4>
+        <ul>
+          <li><b>Telefone:</b> (00) 1234-5678</li>
+          <li><b>E-mail:</b> exemplo@exemplo.com.br</li>
+          <li><b>Horário de atendimento:</b><br>Segunda a Sábado, 07h00 às 22h00<br>Domingos e Feriados, 07h00 às 20h00
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="pay">
+        <span>VISA</span><span>MASTER</span><span>ELO</span><span>AMEX</span><span>PIX</span><span>PAYPAL</span><span>BOLETO</span>
+      </div>
+      <p class="legal">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+        ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </footer>
 
-    <script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
